@@ -1,0 +1,598 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap");
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #172325;
+  background: #fff;
+  font-synthesis: none;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  font: inherit;
+  cursor: pointer;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #eb6b39;
+  outline-offset: 5px;
+}
+button {
+  border: 0;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+h1,
+h2 {
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 1.06;
+}
+h3 {
+  font-size: 1.35rem;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+em {
+  font-style: normal;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.header {
+  padding: 27px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+.logo {
+  font-family: "Manrope", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.085em;
+}
+.logo span {
+  display: inline-block;
+  margin-left: 5px;
+  font-weight: 400;
+}
+.header nav {
+  display: flex;
+  gap: 32px;
+  font-size: 0.875rem;
+}
+.nav-contact {
+  color: inherit;
+  background: transparent;
+  font-size: 0.875rem;
+  padding: 12px 0;
+  border-bottom: 1px solid currentColor;
+}
+.nav-contact span {
+  margin-left: 20px;
+}
+.eyebrow {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.13em;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 19px 25px;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-weight: 600;
+  transition:
+    transform 0.18s,
+    filter 0.18s;
+}
+.button:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.08);
+}
+.button span {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+.text-link {
+  font-size: 0.875rem;
+  display: inline-block;
+  padding: 15px 0;
+}
+.section {
+  padding: 94px 6%;
+  scroll-margin-top: 20px;
+}
+.section h2 {
+  font-size: clamp(2rem, 3.4vw, 3.35rem);
+  margin-top: 20px;
+}
+.section-heading {
+  margin-bottom: 48px;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+.service-grid h3 {
+  margin: 24px 0 15px;
+}
+.service-grid p {
+  max-width: 32ch;
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  margin-top: 58px;
+}
+.steps article {
+  border-top: 1px solid;
+  padding-top: 20px;
+}
+.steps article > span {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+}
+.steps h3 {
+  margin: 29px 0 15px;
+}
+.ending {
+  padding: 80px 6%;
+}
+.ending h2 {
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  margin: 22px 0 32px;
+}
+footer {
+  padding: 30px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-top: 1px solid #ffffff25;
+}
+footer p,
+footer > a:last-child {
+  font-size: 0.8125rem;
+}
+.skip {
+  position: fixed;
+  left: 10px;
+  top: -100px;
+  z-index: 100;
+  background: #fff;
+  color: #000;
+  padding: 15px;
+}
+.skip:focus {
+  top: 10px;
+}
+.presence {
+  --accent: #a82b63;
+  --on-accent: #fff;
+  background: #fff3f8;
+  color: #57233c;
+}
+.presence .logo span {
+  color: #bc3473;
+}
+.presence .header {
+  padding-bottom: 35px;
+}
+.presence-hero {
+  padding: 45px 6% 0;
+}
+.presence-title {
+  text-align: center;
+}
+.presence-title h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(3.6rem, 5.4vw, 5.7rem);
+  letter-spacing: -0.045em;
+  line-height: 1.13;
+  margin: 25px 0 35px;
+}
+.presence-title h1 em {
+  font-weight: 500;
+  font-style: italic;
+  color: #b33270;
+}
+.presence-bottom {
+  max-width: 980px;
+  margin: 0 auto 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+}
+.presence-bottom > p {
+  max-width: 45ch;
+  color: #805267;
+}
+.presence .button {
+  border-radius: 50px;
+  padding-inline: 26px;
+}
+.small-line {
+  display: block;
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 13px;
+  color: #805267;
+}
+.presence-image {
+  height: 290px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 130px 130px 0 0;
+}
+.presence-image img {
+  object-position: center 58%;
+  filter: brightness(0.62) saturate(0.7);
+}
+.presence-image > span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  line-height: 1.9;
+  color: #fff;
+}
+.presence-services {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 10%;
+}
+.presence h2 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+.presence-services h2 {
+  font-size: 2.75rem;
+}
+.presence h2 em {
+  font-style: italic;
+  color: #b33270;
+}
+.presence-services > div > p {
+  margin-top: 28px;
+  color: #805267;
+  max-width: 43ch;
+}
+.service-list article {
+  padding: 24px 0;
+  border-bottom: 1px solid #e8b9cf;
+}
+.service-list article:first-child {
+  padding-top: 0;
+}
+.service-list h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.service-list p {
+  margin-top: 12px;
+  color: #805267;
+}
+.presence .process {
+  background: #f9ddea;
+}
+.presence .steps article {
+  border-color: #d593b2;
+}
+.presence .steps h3 {
+  font-size: 1.15rem;
+}
+.presence .steps p {
+  color: #805267;
+}
+.presence .ending {
+  text-align: center;
+  background: #a82b63;
+  color: #fff7fb;
+}
+.presence .ending h2 {
+  font-size: clamp(2.8rem, 4.7vw, 4.8rem);
+}
+.presence .ending .button {
+  background: #fff7fb;
+  color: #a82b63;
+}
+.presence footer {
+  border-color: #e8b9cf;
+}
+dialog {
+  border: 0;
+  border-radius: 20px;
+  padding: 45px;
+  width: min(92vw, 510px);
+  color: #233142;
+  background: #fff;
+  box-shadow: 0 30px 100px #0004;
+}
+dialog::backdrop {
+  background: #10172299;
+  backdrop-filter: blur(5px);
+}
+dialog h2 {
+  font-family: "Manrope", sans-serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  margin: 18px 0;
+}
+dialog p {
+  margin-bottom: 20px;
+}
+dialog .note {
+  font-size: 0.875rem;
+  color: #637184;
+}
+dialog .button {
+  background: #233142;
+  color: white;
+}
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  background: none;
+  font-size: 2rem;
+  padding: 5px;
+  color: #233142;
+}
+@media (min-width: 1600px) {
+  .header,
+  .section,
+  .ending,
+  footer,
+  .presence-hero {
+    padding-left: max(6%, calc((100vw - 1450px) / 2));
+    padding-right: max(6%, calc((100vw - 1450px) / 2));
+  }
+}
+@media (max-width: 900px) {
+  .header nav {
+    display: none;
+  }
+  .presence-title h1 {
+    font-size: 4.3rem;
+  }
+  .presence-services {
+    gap: 40px;
+  }
+  .presence-services h2 {
+    font-size: 2.2rem;
+  }
+  .presence-bottom {
+    gap: 25px;
+  }
+  .service-grid,
+  .steps {
+    gap: 22px;
+  }
+}
+@media (max-width: 620px) {
+  .header {
+    padding: 20px 6%;
+    gap: 15px;
+  }
+  .logo {
+    font-size: 1.75rem;
+  }
+  .nav-contact {
+    font-size: 0.8125rem;
+  }
+  .nav-contact span {
+    margin-left: 8px;
+  }
+  .section {
+    padding: 60px 6%;
+  }
+  .section h2 {
+    font-size: 2.2rem;
+  }
+  .service-grid,
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .service-grid p {
+    max-width: none;
+  }
+  .steps {
+    margin-top: 35px;
+  }
+  .steps h3 {
+    margin-top: 20px;
+  }
+  .ending {
+    padding: 60px 6%;
+  }
+  .ending h2 {
+    font-size: 2.8rem;
+  }
+  footer {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  footer p {
+    width: 100%;
+    order: 3;
+  }
+  .presence-hero {
+    padding-top: 30px;
+  }
+  .presence-title {
+    text-align: left;
+  }
+  .presence-title h1 {
+    font-size: 2.9rem;
+  }
+  .presence-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+  .presence-bottom > p {
+    font-size: 1rem;
+  }
+  .presence-image {
+    height: 240px;
+    border-radius: 70px 70px 0 0;
+  }
+  .presence-services {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+  .presence .section h2 {
+    font-size: 2.1rem;
+  }
+  .presence .ending h2 {
+    font-size: 2.6rem;
+  }
+  .button {
+    max-width: 100%;
+    gap: 20px;
+  }
+  .eyebrow {
+    font-size: 0.7rem;
+  }
+  dialog {
+    padding: 36px 25px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+  }
+}
+
+.audiences {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  padding: 0 6% 15px;
+  font-size: 0.8125rem;
+}
+.audiences a {
+  padding: 8px 0;
+}
+.audiences span {
+  margin-left: 8px;
+}
+.audiences a:last-child {
+  font-weight: 700;
+}
+.buyer {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 8%;
+  border-top: 1px solid #87928a40;
+}
+.buyer > div > p {
+  margin-top: 25px;
+  max-width: 40ch;
+}
+.buyer-options {
+  display: grid;
+  gap: 30px;
+}
+.buyer-options article + article {
+  padding-top: 30px;
+  border-top: 1px solid #87928a50;
+}
+.buyer-options p {
+  margin: 13px 0 20px;
+}
+.buyer-options .button {
+  font-size: 0.875rem;
+  padding: 14px 20px;
+}
+.presence .buyer {
+  background: #fff3f8;
+}
+@media (max-width: 620px) {
+  .audiences {
+    justify-content: flex-start;
+    gap: 16px;
+    font-size: 0.75rem;
+    align-items: flex-start;
+  }
+  .audiences a:first-child {
+    flex-shrink: 0;
+  }
+  .audiences a:last-child {
+    max-width: 210px;
+  }
+  .buyer {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+
+/* Direção aprovada: Presença, com rosa mais presente e contraste legível. */
+.presence .presence-image {
+  background: #a82b63;
+}
+.presence .presence-image img {
+  opacity: 0.87;
+}
+.presence .audiences a:last-child {
+  color: #a82b63;
+}
+.presence .eyebrow {
+  letter-spacing: 0.12em;
+}
+
+.image-caption {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #805267;
+  text-align: center;
+  padding-top: 12px;
+}

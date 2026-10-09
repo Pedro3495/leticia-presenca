@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Leticia: concierge de ingressos, atendimento pessoal pelo WhatsApp e apoio a organizadores e compradores."
+    />
+    <meta name="theme-color" content="#a82b63" />
+    <link rel="icon" href="data:,">
+    <title>Leticia — Concierge de ingressos</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="config.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body class="presence">
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+    <header class="header">
+      <a class="logo" href="#" aria-label="Leticia, início"
+        >leticia<span>↗</span></a
+      >
+      <nav aria-label="Navegação principal">
+        <a href="#servicos">O que eu faço</a><a href="#como">Como funciona</a>
+      </nav>
+      <button class="nav-contact" data-contact>
+        Vamos conversar <span>↗</span>
+      </button>
+    </header>
+    <nav class="audiences" aria-label="Encontre o atendimento que precisa">
+      <a href="#servicos">Sou organizador <span>↗</span></a
+      ><a href="#ingresso"
+        >Quero comprar ou resolver meu ingresso <span>↗</span></a
+      >
+    </nav>
+    <main id="conteudo">
+      <section class="presence-hero">
+        <div class="presence-title">
+          <span class="eyebrow">CONCIERGE DE INGRESSOS & EVENTOS</span>
+          <h1>
+            Quem faz a festa<br />também merece<br /><em
+              >ter com quem contar.</em
+            >
+          </h1>
+        </div>
+        <div class="presence-bottom">
+          <p>
+            Eu acompanho a jornada de quem compra seu ingresso: recebo o
+            comprovante, organizo as informações e ajudo até a hora de entrar.
+          </p>
+          <div>
+            <button class="button" data-contact>
+              Vamos falar do seu evento
+              <span aria-hidden="true">↗</span></button
+            ><span class="small-line"
+              >Uma conversa direta. Um trabalho próximo.</span
+            >
+          </div>
+        </div>
+        <div class="presence-image">
+          <img
+            src="event.jpg"
+            alt="Luzes de um evento sobre o público"
+            fetchpriority="high"
+          /><span>É SOBRE A EXPERIÊNCIA.<br />INCLUSIVE NOS BASTIDORES.</span>
+        </div>
+        <p class="image-caption">
+          Fotografia ilustrativa; não representa evento atendido por Leticia.
+        </p>
+      </section>
+      <section class="section presence-services" id="servicos">
+        <div>
+          <span class="eyebrow">PRAZER, SUA PARCERIA NOS BASTIDORES.</span>
+          <h2>
+            Organização no processo.<br /><em>Cuidado com as pessoas.</em>
+          </h2>
+          <p>
+            Nem toda dúvida cabe em uma resposta automática. Meu trabalho é
+            acompanhar os ingressos e estar por perto quando alguém precisa de
+            ajuda.
+          </p>
+        </div>
+        <div class="service-list">
+          <article>
+            <h3>Antes da festa</h3>
+            <p>
+              Comprovantes de Pix, planilha organizada e envio de ingressos para
+              os compradores.
+            </p>
+          </article>
+          <article>
+            <h3>Do outro lado da conversa</h3>
+            <p>
+              Atendimento pelo WhatsApp para orientar e resolver dúvidas sobre o
+              acesso.
+            </p>
+          </article>
+          <article>
+            <h3>Na hora de entrar</h3>
+            <p>
+              Apoio para lidar com problemas de ingresso e divergências na
+              entrada, conforme o escopo combinado.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="section process" id="como">
+        <span class="eyebrow">UMA PARCERIA QUE COMEÇA NA CONVERSA</span>
+        <h2>Me conta o que você está planejando.</h2>
+        <div class="steps">
+          <article>
+            <span>01 / ANTES</span>
+            <h3>Alinhamos a operação.</h3>
+            <p>
+              Entendo como você vende e combinamos o fluxo dos pagamentos,
+              ingressos e atendimento.
+            </p>
+          </article>
+          <article>
+            <span>02 / DURANTE AS VENDAS</span>
+            <h3>Cada ingresso, acompanhado.</h3>
+            <p>
+              Recebo os comprovantes, organizo a planilha e faço o envio dos
+              ingressos.
+            </p>
+          </article>
+          <article>
+            <span>03 / NO DIA</span>
+            <h3>Apoio onde precisa.</h3>
+            <p>
+              Ajudo com dúvidas e problemas de acesso. A presença na portaria é
+              combinada para cada evento.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="section buyer" id="ingresso">
+        <div>
+          <span class="eyebrow">VAI CURTIR A FESTA?</span>
+          <h2>Seu ingresso.<br />Uma conversa de distância.</h2>
+          <p>
+            Fale comigo para consultar ingressos dos eventos que atendo ou pedir
+            ajuda com uma compra.
+          </p>
+        </div>
+        <div class="buyer-options">
+          <article>
+            <h3>Ainda vai comprar?</h3>
+            <p>
+              Consulte o evento, a disponibilidade e as orientações de compra
+              pelo WhatsApp.
+            </p>
+            <button class="button" data-contact data-buyer="compra">
+              Consultar ingressos <span>↗</span>
+            </button>
+          </article>
+          <article>
+            <h3>Já comprou?</h3>
+            <p>
+              Tenha o nome do evento e o comprovante em mãos para facilitar o
+              atendimento.
+            </p>
+            <button class="button" data-contact data-buyer="ajuda">
+              Preciso de ajuda <span>↗</span>
+            </button>
+          </article>
+        </div>
+      </section>
+      <section class="ending">
+        <span class="eyebrow">DE PESSOA PRA PESSOA</span>
+        <h2>Seu evento.<br />Minha atenção aos detalhes.</h2>
+        <button class="button" data-contact>
+          Conversar no WhatsApp <span aria-hidden="true">↗</span>
+        </button>
+      </section>
+    </main>
+    <footer>
+      <a class="logo" href="#">leticia<span>↗</span></a>
+      <p>Gestão de ingressos. Atendimento de verdade.</p>
+      <a href="#conteudo">Voltar ao início ↑</a>
+    </footer>
+    <dialog id="contact" aria-labelledby="contact-title">
+      <form method="dialog">
+        <button class="close" aria-label="Fechar">×</button>
+      </form>
+      <span class="eyebrow">VAMOS CONVERSAR</span>
+      <h2 id="contact-title">Seu próximo evento começa aqui.</h2>
+      <p>
+        O contato da Leticia será disponibilizado nesta página após a
+        confirmação do número comercial.
+      </p>
+      <p class="note">O número de WhatsApp ainda não foi informado.</p>
+      <button class="button" id="dismiss">Voltar à página</button>
+    </dialog>
+  </body>
+</html>
